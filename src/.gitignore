@@ -1,0 +1,5 @@
+# Ignore all __pycache__ and Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
