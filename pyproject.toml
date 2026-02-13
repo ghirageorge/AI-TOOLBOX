@@ -8,6 +8,9 @@ version = "0.1.0"
 description = "A short description of your library"
 authors = [{name = "George Ghira", email = "georgeghira@yahoo.com"}]
 license = {text = "MIT"}
+dependencies = [
+    "click==8.2.1"
+]
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -17,4 +20,14 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/georgeghira/ai_toolbox"
+Homepage = "https://github.com/georgeghira/ai-toolbox"
+
+[project.scripts]
+ai_toolbox = "ai_toolbox.main:cli"
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.4.1",
+    "pytest-mock==3.14.1"
+]
+
